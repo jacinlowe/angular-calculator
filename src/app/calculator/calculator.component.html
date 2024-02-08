@@ -1,0 +1,45 @@
+
+<div class="center main">
+
+  <section>
+    <h1>Calculator</h1>
+    <div *ngIf="count" class="center">Count:{{count}}</div>
+    <div class="inputs">
+      <!-- <form #form="ngForm"> -->
+        <input [formControl]="inpt1" type="number" name="inp1" id="inp1">
+        <h4>{{symbol}}</h4>
+        <input  [formControl]="inpt2" type="number" name="inp2" id="inp2">
+      <!-- </form> -->
+      </div>
+    <div class="symbols">
+      <div class="button">
+        <button (click)="onCalculate('+')" type="submit">+</button>
+      </div>
+      <div class="button">
+        <button (click)="onCalculate('-')" type="submit">-</button>
+      </div>
+      <div class="button">
+        <button (click)="onCalculate('*')" type="submit">*</button>
+      </div>
+      <div class="button">
+        <button (click)="onCalculate('/')" type="submit">/</button>
+      </div>
+
+    </div>
+    <div class="reset">
+      <button (click)="onReset()" type="submit">Reset</button>
+    </div>
+
+    <div class="result">
+      <div *ngIf="result" class="center">Result:{{result}}</div>
+
+    </div>
+    <div *ngIf="calculations.length > 0" class="history">
+      <div  class="center">History:</div>
+      <div *ngFor="let calculation of calculations">
+        {{calculation}}
+      </div>
+
+    </div>
+  </section>
+</div>

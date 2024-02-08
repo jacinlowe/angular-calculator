@@ -1,0 +1,67 @@
+
+.main{
+  margin-top: 15%;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid green;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+  width: 400px;
+  height: 600px;
+}
+
+
+.symbols{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+button{
+  width: 75px;
+  height: 50px;
+  background-color: rgb(200, 224, 216);
+  margin:10px;
+  padding:20px
+
+}
+
+.inputs{
+  padding:20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+}
+.inputs > input{
+  margin:5px;
+}
+
+.inputs > h4{
+  margin:0 10px;
+  align-content: center;
+  align-self: center;
+}
+.reset{
+  align-self: start;
+  margin-left: 10px;
+}
+.reset > button{
+  background-color: red;
+}
