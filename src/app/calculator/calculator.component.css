@@ -18,7 +18,7 @@ section{
   border-radius: 25px;
   padding: 10px;
   margin: 10px;
-  width: 400px;
+  width: 75vw;
   height: 600px;
 }
 
@@ -51,6 +51,11 @@ button{
 }
 .inputs > input{
   margin:5px;
+  height: 30px;
+  ::placeholder{
+    color:grey;
+  }
+
 }
 
 .inputs > h4{
